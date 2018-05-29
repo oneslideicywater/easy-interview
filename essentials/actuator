@@ -1,0 +1,5 @@
+
+# Actuator
+actuator允许检测应用的内在运行机制。
+actuator以两个方式暴露信息
+   通过web端点（web API/web endpoint）或者shell接口
