@@ -2,7 +2,7 @@
 
 Spring邮件的接口是$MailSender$
 
-配置一个$MailSenderImpl$:
+配置一个$ MailSenderImpl $:
 
     @Bean
     public  MailSender mailSender(Environment env){
@@ -16,7 +16,7 @@ Spring邮件的接口是$MailSender$
 
 上述代码可以自动配置自己的$MailSession$
 
-#fetchJNDI
+# fetchJNDI
        
        
        @Bean
