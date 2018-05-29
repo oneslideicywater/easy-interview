@@ -16,8 +16,10 @@ Spring邮件的接口是$MailSender$
 
 上述代码可以自动配置自己的$MailSession$
 
-#fetch from JNDI
-        @Bean
+#fetchJNDI
+       
+       
+       @Bean
         public JndiObjectFactoryBean mailSession(){
             JndiObjectFactoryBean jndi=new JdniObjectFactoryBean();
             jndi.setJndiName("mail/Session");
