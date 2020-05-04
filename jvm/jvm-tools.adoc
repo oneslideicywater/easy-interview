@@ -31,6 +31,12 @@ jps -q
 
 == jstat
 
+进程13840 GC监控，1s执行一次，一共执行100次。
+
+[source,bash]
+----
+jstat -gc 13840 1s 100 
+----
 
 [source,bash]
 ----
