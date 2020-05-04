@@ -4,6 +4,9 @@ oneslide oneslideicywater@qq.com
 
 == ``-gc``
 
+可以显示gc的信息，查看gc的次数，及时间。
+
+
 |===
 | field| description
 |S0C |年轻代中第一个survivor（幸存区）的容量 (字节) 
@@ -25,6 +28,8 @@ oneslide oneslideicywater@qq.com
 
 == ``–class``
 
+显示加载class的数量，及所占空间等信息。
+
 |====
 | field |description
 |Loaded |装载的类的数量 
@@ -35,6 +40,8 @@ oneslide oneslideicywater@qq.com
 |====
 
 == ``-compiler``
+
+显示VM实时编译的数量等信息。
 
 |====
 | field| description
