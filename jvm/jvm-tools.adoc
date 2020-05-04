@@ -1,0 +1,29 @@
+== jps
+
+查看java进程状态。
+
+
+=== 列出主类的进程号
+
+[source,bash]
+----
+>jps -l
+9568 org.jetbrains.jps.cmdline.Launcher
+12312
+2652 sun.tools.jps.Jps
+----
+
+=== 列出进程的JVM参数
+
+[source,bash]
+----
+jps -v
+----
+
+
+=== 只显示PID
+
+[source,bash]
+----
+jps -q
+----
