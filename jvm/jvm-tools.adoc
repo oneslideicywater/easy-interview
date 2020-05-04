@@ -31,6 +31,29 @@ jps -q
 
 == jstat
 
+
+=== jstat选项
+
+[source,bash]
+----
+C:\Users\onesl> jstat -options
+-class
+-compiler
+-gc
+-gccapacity
+-gccause
+-gcmetacapacity
+-gcnew
+-gcnewcapacity
+-gcold
+-gcoldcapacity
+-gcutil
+-printcompilation
+----
+用户希望查询的虚拟机信息，主要分为3类：类装载、垃圾收集和运行期编译状况。
+
+=== -gc
+
 进程13840 GC监控，1s执行一次，一共执行100次。
 
 [source,bash]
