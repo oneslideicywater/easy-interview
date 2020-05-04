@@ -1,3 +1,7 @@
+= Java Tools
+oneslide oenslideicywater@qq.com
+:toc:
+
 == jps
 
 查看java进程状态。
@@ -50,7 +54,27 @@ C:\Users\onesl> jstat -options
 -gcutil
 -printcompilation
 ----
-用户希望查询的虚拟机信息，主要分为3类：类装载、垃圾收集和运行期编译状况。
+
+
+
+
+|====
+| option | description
+| –class|监视类装载、卸载数量、总空间及类装载所耗费的时间
+| –gc|监视Java堆状况，包括Eden区、2个Survivor区、老年代、永久代等的容量
+|  –gccapacity|  监视内容与-gc基本相同，但输出主要关注Java堆各个区域使用到的最大和最小空间
+|–gcutil|监视内容与-gc基本相同，但输出主要关注已使用空间占总空间的百分比 
+|–gccause| 与-gcutil功能一样，但是会额外输出导致上一次GC产生的原因
+|  –gcnew|监视新生代GC的状况
+|–gcnewcapacity| 监视内容与-gcnew基本相同，输出主要关注使用到的最大和最小空间
+|–gcold| 监视老年代GC的状况
+|–gcoldcapacity |监视内容与——gcold基本相同，输出主要关注使用到的最大和最小空间
+|–gcpermcapacity| 输出永久代使用到的最大和最小空间 
+|–compiler |输出JIT编译器编译过的方法、耗时等信息 
+|–printcompilation|输出已经被JIT编译的方法
+|====
+
+
 
 === -gc
 
@@ -67,6 +91,8 @@ $>jstat -gc 13840
  S0C    S1C    S0U    S1U      EC       EU        OC         OU       MC     MU    CCSC   CCSU   YGC     YGCT    FGC    FGCT     GCT
 512.0  512.0   0.0   488.0   512.0    263.2     512.0      168.0    4864.0 3082.0 512.0  337.6       3    0.003   0      0.000    0.003
 ----
+
+输出的解释如下：
 
 |====
 | column |description
