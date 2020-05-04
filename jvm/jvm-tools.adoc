@@ -76,39 +76,6 @@ C:\Users\onesl> jstat -options
 
 
 
-=== -gc
-
-进程13840 GC监控，1s执行一次，一共执行100次。
-
-[source,bash]
-----
-jstat -gc 13840 1s 100 
-----
-
-[source,bash]
-----
-$>jstat -gc 13840
- S0C    S1C    S0U    S1U      EC       EU        OC         OU       MC     MU    CCSC   CCSU   YGC     YGCT    FGC    FGCT     GCT
-512.0  512.0   0.0   488.0   512.0    263.2     512.0      168.0    4864.0 3082.0 512.0  337.6       3    0.003   0      0.000    0.003
-----
-
-输出的解释如下：
-
-|====
-| column |description
-
-|  S0C |  Survivor 0 capacity
-|  S1C |  Survivor 1 capacity
-|  S0U |  Survivor 0 used
-|  EC | Eden capacity
-|  EU | Eden used
-| OC | old capacity
-| OU | old used
-|YGC | young gc count
-|FGC | full gc count
-
-|======
-
 
 
 
