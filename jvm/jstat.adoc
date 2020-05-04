@@ -79,6 +79,9 @@ VM内存中三代（young,old,perm）对象的使用和占用大小
 
 == ``-gcutil``
 
+统计gc信息
+
+
 |====
 | field| description
 |S0 |年轻代中第一个survivor（幸存区）已使用的占当前容量百分比
@@ -94,6 +97,9 @@ VM内存中三代（young,old,perm）对象的使用和占用大小
 |====
 
 == ``-gcnew``
+
+年轻代对象的信息
+
 |====
 | field| description
 |S0C| 年轻代中第一个survivor（幸存区）的容量 (字节)
@@ -108,6 +114,8 @@ VM内存中三代（young,old,perm）对象的使用和占用大小
 |====
 
 == `` -gcnewcapacity``
+
+年轻代对象的信息及其占用量。
 
 |====
 | field| description
