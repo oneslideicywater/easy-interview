@@ -26,3 +26,8 @@ Collections实用类也可以包装非线程安全集合，返回一个线程安
  Set s=Collections.synchronizedSet(new HashSet());
  Map m=Collections.synchronizedMap(new HashMap());
 ----
+
+
+== Set
+
+线程安全set是没有的，可以使用ConcurrentHashMap间接实现。参考： https://blog.csdn.net/l153097889/article/details/77891250[线程安全Set]
