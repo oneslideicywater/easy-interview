@@ -1,0 +1,44 @@
+== clone()方法
+
+clone方法的对象实现Cloneable接口，否则会抛异常。
+
+[source,java]
+----
+public static class Pair implements Cloneable{
+        int x;
+        int y;
+        Object p=new Object();
+        @Override
+        public Pair clone() throws CloneNotSupportedException {
+            Pair pair=(Pair) super.clone(); //这里是浅复制，即引用和原体指向同一块内存，基础类型不是
+            return pair;
+        }
+    }
+----
+
+
+另外，数组的Clone方法算是深复制：
+
+[source,java]
+----
+  int[] a=new int[5];
+        for (int i = 0; i < 5; i++) {
+            a[i]=0;
+        }
+
+        int[] b=a.clone();
+        System.out.println(Arrays.toString(a));
+        b[1]=1;
+        System.out.println(Arrays.toString(b));
+        System.out.println(Arrays.toString(a));
+----
+
+
+结果
+
+[source,bash]
+----
+[0, 0, 0, 0, 0]
+[0, 1, 0, 0, 0]
+[0, 0, 0, 0, 0]
+----
