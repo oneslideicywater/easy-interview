@@ -1,0 +1,28 @@
+== 基本的线程安全机制
+
+=== ArrayList vs Vector
+
+Vector是线程安全版的ArrayList
+
+
+=== HashMap vs HashTable vs ConcurrentHashMap
+
+HashMap 是非线程安全的，在此基础上，HashTable使用粗粒度锁实现了线程安全。ConcurrentHashMap对HashTable做了一些优化，最重要的是分段锁。
+
+
+=== Stack 
+
+继承于Vector，也是线程安全的。
+
+
+== Collections 实用类
+
+Collections实用类也可以包装非线程安全集合，返回一个线程安全集合。
+
+[source,java]
+----
+ Collection c=Collections.synchronizedCollection(new ArrayList());
+ List list=Collections.synchronizedList(new ArrayList());
+ Set s=Collections.synchronizedSet(new HashSet());
+ Map m=Collections.synchronizedMap(new HashMap());
+----
