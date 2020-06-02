@@ -6,3 +6,20 @@
 - https://github.com/oneslideicywater/easy-interview/blob/master/jvm/jstat.adoc[jstat]
 
 - https://github.com/oneslideicywater/easy-interview/blob/master/jvm/jmap.adoc[jmap]
+
+
+== todo list
+
+1. 如何排查堆外内存?堆外内存的分配和回收途径。
+
+相关的工具包括 https://www.jianshu.com/p/388e35d8a09b[jcmd],
+jcmd包含堆内内存，code区域，通过``unsafe.allocateMemory``和‵‵directByteBuffer‵‵申请的内存，但是不包含Native Code(C code申请的内存)
+
+
+- pmap是linux的内存排查工具。
+- gperftools
+- strace
+
+glibc内存池
+
+
