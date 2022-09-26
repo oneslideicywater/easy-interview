@@ -3,9 +3,9 @@
 
 ### JVM
 
-- [jvm](/jvm)
+- [jvm](/easy-interview/jvm)
 
 
 ### Java
 
-- [java](/java)
+- [java](/easy-interview/java)
