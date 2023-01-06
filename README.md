@@ -12,4 +12,8 @@
 
 ### 监控
 
-- [java](/easy-interview/monitor)
+- [监控](/easy-interview/monitor)
+
+### golang
+
+- [golang](golang/README.md)

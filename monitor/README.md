@@ -109,7 +109,7 @@ Zipkin is a distributed tracing system. It helps gather timing data needed to tr
 
 ##### 探针/压测
 
-公有云产商一般会使用遍布全国的互联网终端节点来模拟外部真实网络环境下的用户访问，模拟外部真实网络环境下的用户访问。
+公有云产商一般会使用遍布全国的互联网终端节点来模拟外部真实网络环境下的用户访问.
 
 
 ##### 操作系统
