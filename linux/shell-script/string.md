@@ -56,9 +56,12 @@ service-ctl is utility tools for services which obey the convention.
 - https://unix.stackexchange.com/questions/286335/how-variables-inside-braces-are-evaluated
 - https://unix.stackexchange.com/questions/30470/what-does-mean-in-a-shell-script/30472
 
+
 ### 美化输出
 
 ### 颜色列表
+
+
 color|code
 ------|---------------
 Black       | 0;30    
@@ -77,6 +80,7 @@ $\color{cyan}{Cyan}$        | 0;36
 Light Cyan  |  1;36
 Light Gray  | 0;37    
 White       |  1;37
+
 
 ### 输出颜色字符串
 

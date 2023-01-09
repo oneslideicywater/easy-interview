@@ -47,6 +47,8 @@ function hello(){
 result=$(hello hello1 hello2) 
 echo $result
 ```
+
+
 |变量| 描述 |
 |--|--|
 | $0 | 第一个位置参数（脚本文件名或函数名） 

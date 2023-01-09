@@ -30,6 +30,7 @@ root       7228  [7175] 0 03:32 pts/0    00:00:00 ps -ef
 
 一般进程遵守接受的信号规范，这些信号有着特定的语义：
 
+
 |Signal| Name |Description
 ----|-----|-----
 |1 |HUP | Hangs up
