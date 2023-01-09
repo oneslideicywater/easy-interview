@@ -1,5 +1,3 @@
 # Linux
 
-## Systemd
-
-- [How to create a systemd service in Linux](systemd/create-systemd-service.md)
+- [Shell Script Examples](shell-script/README.md)

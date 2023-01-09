@@ -207,9 +207,3 @@ Person ID: 2
 ```
 
 
-
-@echo off 
-
-set PGPASSWORD=<yourpassword>
-
-pgdump -U postgres ...

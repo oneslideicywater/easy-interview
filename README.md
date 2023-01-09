@@ -1,19 +1,18 @@
 ## Oneslide笔记
 
-
-### JVM
+### 编程语言
 
 - [jvm](/easy-interview/jvm)
 
-
-### Java
+- [golang](golang/README.md)
 
 - [java](/easy-interview/java)
 
-### 监控
+### 监控 & 日志
 
 - [监控](/easy-interview/monitor)
 
-### golang
 
-- [golang](golang/README.md)
+### 操作系统
+
+- [linux](linux/README.md)
